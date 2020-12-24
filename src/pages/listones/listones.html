@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Listones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-card
+	 *ngFor=" let currentCard of _dataCards"
+	 (click)="loadDetails (currentCard)">
+	 <img src="assets/imgs/{{ currentCard.image }}">
+
+	 <ion-card-content>
+	 	<ion-card-title>{{ currentCard.title }}</ion-card-title>
+	 	 </ion-card-content>
+	</ion-card>
+
+
+</ion-content>

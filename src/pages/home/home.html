@@ -1,14 +1,50 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+
+	<ion-card
+	    (click)="loadDetails ( currentInfo )">
+		<img src="assets/imgs/leotardo.jpg">
+<ion-card-content>
+	<ion-card-title> Leotardos </ion-card-title>
+</ion-card-content>
+	</ion-card>
+
+	<ion-card
+	    (click)="loadDetailscla ( currentInfocla )">
+		<img src="assets/imgs/clavas.jpg">
+<ion-card-content>
+	<ion-card-title> Clavas </ion-card-title>
+</ion-card-content>
+	</ion-card>
+
+<ion-card
+	    (click)="loadDetailspel ( currentInfopel )">
+		<img src="assets/imgs/pelotas.jpg">
+<ion-card-content>
+	<ion-card-title> Pelotas </ion-card-title>
+</ion-card-content>
+	</ion-card>
+
+<ion-card
+	    (click)="loadDetailslis ( currentInfolis )">
+		<img src="assets/imgs/listones.jpg">
+<ion-card-content>
+	<ion-card-title> Listones </ion-card-title>
+</ion-card-content>
+	</ion-card>
+
+<ion-card
+	    (click)="loadDetailsar ( currentInfoar )">
+		<img src="assets/imgs/aros.jpg">
+<ion-card-content>
+	<ion-card-title> Aros </ion-card-title>
+</ion-card-content>
+	</ion-card>
+
+
 </ion-content>
